@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="style">
+</head>
+<style>
+    body {
+
+        text-align: center;
+    }
+
+    #nav-toggle {
+        position: absolute;
+        display: none;
+    }
+
+    nav .icon-burger {
+
+        position: fixed;
+        right: 5%;
+        top: 10%;
+        display: none;
+        transform: translateY(-50%);
+
+
+
+
+
+    }
+
+    nav .icon-burger .line {
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        margin: 5px;
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+    }
+
+    @media screen and (max-width: 768px) {
+        nav .logo {
+            float: none;
+            width: auto;
+            justify-content: center;
+        }
+
+        nav .links {
+            float: none;
+            position: fixed;
+            z-index: 9;
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 100%;
+            width: auto;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgba(0, 0, 0, .8);
+            overflow: hidden;
+            box-sizing: border-box;
+            transition: all .5s ease-in-out;
+        }
+
+        nav .links a {
+            font-size: 20px;
+        }
+
+        nav :checked~.links {
+            bottom: 118px;
+            top: 0px;
+        }
+
+        nav .icon-burger {
+            display: block;
+        }
+
+        nav :checked~.icon-burger .line:nth-child(1) {
+            transform: translateY(10px) rotate(225deg);
+        }
+
+        nav :checked~.icon-burger .line:nth-child(3) {
+            transform: translateY(-10px) rotate(-225deg);
+        }
+
+        nav :checked~.icon-burger .line:nth-child(2) {
+            opacity: 0;
+        }
+
+    }
+
+    #p {
+        font-size: 6vw;
+
+
+
+        width: 100%;
+
+        margin: -0.8rem auto;
+        text-align: center;
+        text-shadow: 1px 1px 2px whitesmoke;
+
+        font-weight: bold;
+        position: absolute;
+
+
+        top: 12rem;
+        color: violet;
+
+        text-align: center;
+
+    }
+
+    body {
+        background-image: url(donation9.jpg);
+
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+
+        /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+        background-attachment: fixed;
+
+        /* This is what makes the background image rescale based
+     on the container's size */
+        background-size: cover;
+
+        /* Set a background color that will be displayed
+     while the background image is loading */
+        /* background-color: #464646; */
+    }
+
+    a {
+
+        margin: 12px -12px;
+        padding: 48px;
+        width: 119px;
+        line-height: 0px;
+        float: left;
+        font-size: 18px;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        font-family: 'Open Sans', sans-serif
+            /* font-family: 'Baloo Paaji 2', cursive; */
+    }
+
+    a:hover {
+
+        color: violet;
+        -webkit-transform: scale(1.2);
+        font: outline;
+    }
+
+    .razorpay-payment-button {
+        top: 325px;
+    }
+</style>
+
+<body>
+    <nav>
+        <i class="fa fa-bars fa-2x"></i>
+        <input id="nav-toggle" type="checkbox">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact </a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div id="section">
+        <p id="p">"Thank You for Your donation"</p>
+
+        <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                data-payment_button_id="pl_GAWbgWornauH0t"> </script>
+        </form>
+
+
+
+
+
+</body>
+
+</html>

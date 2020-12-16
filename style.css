@@ -1,0 +1,379 @@
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    text-align: center;
+}
+body {
+  background-image: url(donation6.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  /* background-color: #464646; */
+}
+/* body{
+    background: url(donation6.jpg)no-repeat center; 
+    max-width: 100%;
+  height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   
+    
+    display: inline-block;
+      
+    background-image: -webkit-gradient();
+    background-size: cover;
+    text-align: center;
+  box-sizing: border-box;
+    width: 100%;
+
+} */
+
+nav{
+    width: 100%;
+
+    overflow: hidden;
+    position: fixed;
+    top:0;
+
+}
+ul{
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+li{
+    float: right;
+}
+a{
+ 
+    margin: 0.5em;
+    padding: 2em;
+    width: 7.5em;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: navy;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+a:hover{
+    color: black;
+
+    font: outline;
+}
+/* #nav-toggle {
+  position: absolute;
+  display: none;
+
+}
+nav .icon-burger {
+	display: inline;
+	position: fixed;
+	right: 5%;
+  top: 10%;
+  display: none;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 1.2rem;
+  }
+ 
+a {
+    margin: 0.5em;
+    padding: 2em;
+    width: 7.5em;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: navy;
+    font-weight: bold;
+    font-family: cursive;
+}
+	nav :checked ~ .links {
+    bottom: 240px;
+    top: 0px;
+    display: -webkit-inline-box;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+ */
+ #nav-toggle {
+	position: absolute;
+	display: none;
+}
+nav .icon-burger {
+ 
+	position: fixed;
+	right: 5%;
+  top: 10%;
+  display: none;
+	transform: translateY(-50%);
+	
+	
+
+	
+	
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+    bottom: 118px;
+    top: 0px;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+#text {
+  
+  text-shadow: 1px 1px 3px rosybrown;
+    font-family: futura;
+    font-style: italic;
+
+    width:100%;
+
+    margin: 0 auto;
+     
+      text-align: center;
+      position: relative;
+  
+  top: 242px;
+      color:pink;
+     
+    font-size: 5vw;
+    font-weight: bold;
+   
+    -webkit-animation:colorchange 20s infinite alternate;
+
+
+  }
+
+  @-webkit-keyframes colorchange {
+    0% {
+
+      color: blue;
+    }
+
+    10% {
+
+      color: #8e44ad;
+    }
+
+    20% {
+
+      color: #1abc9c;
+    }
+
+    30% {
+
+      color: #d35400;
+    }
+
+    40% {
+
+      color: blue;
+    }
+
+    50% {
+
+      color: #34495e;
+    }
+
+    60% {
+
+      color: blue;
+    }
+
+    70% {
+
+      color: #2980b9;
+    }
+    80% {
+
+      color: #f1c40f;
+    }
+
+    90% {
+
+      color: #2980b9;
+    }
+
+    100% {
+
+      color: pink;
+    }
+  }
+  a {
+    display: inline-block;
+    margin: 1px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  
+ span.test-mode-badge {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    right: -50px;
+    top: 50px;
+    padding: 3px;
+    text-decoration: none;
+    background: #d64444;
+    border: 1px dashed #fff;
+    font-family: lato,ubuntu,helvetica,sans-serif;
+    opacity: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: opacity .3s ease-in 0s;
+    -o-transition: opacity .3s ease-in 0s;
+    transition: opacity .3s ease-in 0s;
+    color: #fff;
+    display: none;
+  }
+  #p{
+    font-family: futura;
+    font-style: italic;
+
+    width:100%;
+
+    margin: 1.2rem auto;
+    text-align: center;
+    text-shadow: 1px 1px 5px red;
+
+    font-weight: bold;
+    position: absolute;
+
+
+ top:192px;
+ color: white;
+ font-size:2vw;
+
+ text-align: center;
+ font-family: sans-serif;
+  }
+  .razorpay-payment-button {
+   
+    top:316px;
+    
+  }.razorpay-payment-button.svelte-ohbfj8, .razorpay-payment-button.svelte-ohbfj8 *, .razorpay-payment-button.svelte-ohbfj8 *::before, .razorpay-payment-button.svelte-ohbfj8 *::after {
+    box-sizing: border-box;
+   
+     
+  }
+  s
+   
+.PaymentButton--dark.svelte-ekc7fv.svelte-ekc7fv {
+  color: #fff;
+  
+}
+
+
+  
+  

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>Contact form</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+ 
+  <link rel="stylesheet" href="style1.css">
+  
+</head>
+<body>
+  <nav>
+    <ul>
+   
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    
+</nav>
+  <div class="contact">
+    <h1 id="text1">How can we help?</h1>
+  </div>
+  <div class="contact-form">
+    <form id="contact-form" method="post" action="contact.php">
+    
+      <input name="name" type="text"  class="form-control" placeholder="Your Name" required><br>
+      <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+      <input name="phone" type="tel"  class="form-control" placeholder="Your Phone No. " required><br>
+      <textarea name="msg"  class="form-control" placeholder="Message" row="4"required></textarea><br>
+      <input name="submit" type="submit" class="form-control submit" value="SEND MESSAGE" >
+    </form>
+  </div>
+  
+</body>
+</html>
